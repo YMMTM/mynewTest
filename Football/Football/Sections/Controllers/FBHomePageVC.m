@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"即时比分";
+    self.title = @"即分";
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
