@@ -25,22 +25,22 @@
     self.title = @"即时比分";
     // Do any additional setup after loading the view.
     
-//    self.view.backgroundColor = [UIColor whiteColor];
-//    self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
-//    self.webView.delegate = self;
-//    [self.view addSubview:self.webView];
-//    
-//    self.webView.backgroundColor = [UIColor whiteColor];
-//    self.webView.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
-//    
-//    NSURL *htmlURL = [NSURL URLWithString:@"http://www.sina.com"];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:htmlURL];
-//    [self.webView loadRequest:request];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    self.webView.delegate = self;
+    [self.view addSubview:self.webView];
     
-    ZLCWebView *my = [[ZLCWebView alloc]initWithFrame:self.view.bounds];
-    [my loadURLString:@"http://www.sina.com"];
-    my.delegate = self;
-    [self.view addSubview:my];
+    self.webView.backgroundColor = [UIColor whiteColor];
+    self.webView.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
+    
+    NSURL *htmlURL = [NSURL URLWithString:@"http://www.sina.com"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:htmlURL];
+    [self.webView loadRequest:request];
+    
+//    ZLCWebView *my = [[ZLCWebView alloc]initWithFrame:self.view.bounds];
+//    [my loadURLString:@"http://www.sina.com"];
+//    my.delegate = self;
+//    [self.view addSubview:my];
     
 
     
